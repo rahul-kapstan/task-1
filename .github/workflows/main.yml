@@ -14,6 +14,6 @@ jobs:
         with:
           application_name: rahul-action
           image_tag: latest
-          kapstan_api_key: ${{ secrets.KAPSTAN_API }}
+          kapstan_api_key: ${{ secrets.KAPSTAN_API_2 }}
           wait_for_deployment: true
 
