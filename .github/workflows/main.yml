@@ -5,9 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy on Kapstan
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Deploy on Kapstan
         id: Kapstan
         uses: kapstan-io/deployment-action@v0.7
