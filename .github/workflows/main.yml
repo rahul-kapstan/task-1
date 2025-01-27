@@ -1,4 +1,4 @@
-- name: Deploy on Kapstan
+ name: Deploy on Kapstan
   id: Kapstan
   uses: kapstan-io/deployment-action@v0.7
   with: 
