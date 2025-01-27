@@ -12,8 +12,9 @@ jobs:
         id: Kapstan
         uses: kapstan-io/deployment-action@v0.7-dev
         with:
-          application_name: rahul-action
-          image_tag: latest
+          application_name: task1-rahul
+          image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API_2 }}
           wait_for_deployment: true
 
+  
