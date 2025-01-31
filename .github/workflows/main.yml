@@ -12,7 +12,7 @@ jobs:
         id: Kapstan
         uses: kapstan-io/deployment-action@rahul-added-commit-details-github-action-dev
         with:
-          application_name: rahul-task5
+          application_name: rahul-task6
           image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API }}
           wait_for_deployment: true
