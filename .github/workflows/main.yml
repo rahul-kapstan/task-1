@@ -6,11 +6,11 @@ jobs:
     name: Deploy on Kapstan
     steps:
       - name: Checkout
-        uses: kapstan-io/deployment-action@v0.7-dev
+        uses: kapstan-io/deployment-action@v0.7
         
       - name: Deploy on Kapstan
         id: Kapstan
-        uses: kapstan-io/deployment-action@rahul-added-commit-details-github-action-dev
+        uses: kapstan-io/deployment-action@v0.7-dev
         with:
           application_name: rahul-github-task1
           image_tag: backend
