@@ -16,7 +16,7 @@ jobs:
           image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API }}
           wait_for_deployment: true
-          commit_details: https://github.com/kapstan-io/shadowfax/commit/123456789
+          commit_details: https://github.com/rahul-kapstan/task-1/commit/ca4a65f38f78bb207eb4f22a7cadb3676baf5cef
       
 
   
