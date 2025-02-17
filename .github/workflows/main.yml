@@ -6,17 +6,17 @@ jobs:
     name: Deploy on Kapstan
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: kapstan-io/deployment-action@v0.7-dev
         
       - name: Deploy on Kapstan
         id: Kapstan
         uses: kapstan-io/deployment-action@rahul-added-commit-details-github-action-dev
         with:
-          application_name: rahul-task5
+          application_name: rahul-github-task1
           image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API }}
           wait_for_deployment: true
-          commit_details: https://github.com/kapstan-io/shadowfax/commits/xydsbfief
+          commit_details: https://github.com/kapstan-io/shadowfax/commit/123456789
       
 
   
