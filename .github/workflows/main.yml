@@ -10,13 +10,13 @@ jobs:
         
       - name: Deploy on Kapstan
         id: Kapstan
-        uses: kapstan-io/deployment-action@main
+        uses: kapstan-io/deployment-action@v0.7-dev
         with:
           application_name: rahul-github-task1
           image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API }}
           wait_for_deployment: true
-          commit_details: https://github.com/rahul-kapstan/task-1/commit/ca4a65f38f78bb207eb4f22a7cadb3676baf5cef
+          commit_details: https://github.com/rahul-kapstan/task-1/commit/ca4a65f38f78bb207eb4f22a7cadb3678902
       
 
   
