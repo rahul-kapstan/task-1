@@ -14,7 +14,7 @@ jobs:
         with:
           application_name: rahul-github-task1
           image_tag: backend
-          kapstan_api_key: ${{ secrets.KAPSTAN_API }}
+          kapstan_api_key: ${{ secrets.KAPSTAN }}
           wait_for_deployment: true
           commit_details: https://github.com/rahul-kapstan/task-1/commit/3222a8c237bfef62420b651edf392c2e90e157ca
       
