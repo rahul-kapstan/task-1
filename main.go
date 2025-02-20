@@ -7,6 +7,7 @@ import (
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq" // PostgreSQL driver
 	"log"
+
 	"net/http"
 )
 
@@ -46,6 +47,7 @@ func initDB() {
 		key VARCHAR(255) PRIMARY KEY,
 		value TEXT
 	);`
+
 	_, err = db.Exec(createTableQuery)
 	if err != nil {
 		log.Fatalf("Error creating table: %v\n", err)
