@@ -10,7 +10,7 @@ jobs:
         
       - name: Deploy on Kapstan
         id: Kapstan
-        uses: kapstan-io/deployment-action@rahul-CD-changes
+        uses: kapstan-io/deployment-action@rahul-added-commit-details-github-action-dev
         with: 
           application_name: rahul-github-2 
           image_tag: backend  
