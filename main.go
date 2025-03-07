@@ -66,6 +66,7 @@ func getValue(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 
 		if err == sql.ErrNoRows {
+
 			value = "null" // Return "null" if the key doesn't exist
 		} else {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
