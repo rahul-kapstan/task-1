@@ -69,6 +69,7 @@ func getValue(w http.ResponseWriter, r *http.Request) {
 
 			value = "null" // Return "null" if the key doesn't exist
 		} else {
+
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
