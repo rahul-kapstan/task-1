@@ -62,6 +62,7 @@ func getValue(w http.ResponseWriter, r *http.Request) {
 	var value string
 
 	err := db.QueryRow("SELECT value FROM key_value_store WHERE key = $1", key).Scan(&value)
+
 	if err != nil {
 		if err == sql.ErrNoRows {
 			value = "null" // Return "null" if the key doesn't exist
