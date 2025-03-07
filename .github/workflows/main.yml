@@ -1,4 +1,8 @@
-on: [push]
+name: Deploy on Kapstan
+
+on: 
+  push:
+  workflow_dispatch:  
 
 jobs:
   deploy:
@@ -10,10 +14,9 @@ jobs:
         
       - name: Deploy on Kapstan
         id: Kapstan
-        uses: kapstan-io/deployment-action@v0.7-dev
-        with:
-          application_name: rahul-github-2
-          image_tag: backend 
+        uses: kapstan-io/deployment-action@rahul-added-commit-details-github-action-dev
+        with: 
+          application_name: rahul-github-3
+          image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API_3 }}
           wait_for_deployment: true
-          commit_details: https://github.com/rahul-kapstan/task-1/commit/3222a8c237bfef62420b651edf394758999
