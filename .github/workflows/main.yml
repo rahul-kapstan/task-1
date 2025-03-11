@@ -16,7 +16,7 @@ jobs:
         id: Kapstan
         uses: kapstan-io/deployment-action@rahul-added-commit-details-github-action-dev
         with: 
-          application_name: github-test-4
+          application_name: github-test-4 
           image_tag: backend
           kapstan_api_key: ${{ secrets.KAPSTAN_API_3 }}
           wait_for_deployment: true
